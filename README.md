@@ -40,4 +40,21 @@ The chatbot application is served as an api endpoint using flask as the server s
 4. install mongodb if it isn't already present. The application automatically attempts to connection at ```mongodb://127.0.0.1:27017```.
 5. change back to root directory where the ```app.py``` is located and run : ```python app.py```
 
+## API DATA STRUCTURE:
+The post request data is of the type json. The request body is structured as follows:
+```
+{
+    "user_query":{
+        "unique_id":"12345k6p0935",
+        "query":"What does wazobia tech about?"
+    }
+}
+```
+The expexted response is of the type json, and is structured as follows:
+```
+{
+    "response": " ... .... .... "
+}
+```
+
 #### NOTE: COHERE API FREE KEYS CAN BE GOTTEN [HERE](https://dashboard.cohere.ai/api-keys) 
