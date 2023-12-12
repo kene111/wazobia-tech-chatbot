@@ -20,7 +20,7 @@ RAG which stands for Retrieval Augmented Generation, is one of the methods that 
 language model to generate the adequate response to the question or query asked. For this project  ```FAISS``` was used as the vector database, and huggingface ```sentence-transformers/all-MiniLM-L6-v2``` embedding model.
 
 ### Software development and deployment:
-The chatbot application is served as an api endpoint using flask as the web framework.
+The chatbot application is served as an api endpoint using flask as the server side framework.
 
 ## Repository Breakdown:
 1. ```wzb_logic/config```: This folder contains both system and deployment configurations.
@@ -30,3 +30,14 @@ The chatbot application is served as an api endpoint using flask as the web fram
 5. ```wzb_logic/__init__.py```: Flask application factory configuration.
 6. ```app.py```: Runs the flask application.
 7. ```requirements.txt```: Requirement file.
+
+## How to run application locally:
+1. Create and activate a virtual environment.
+2. change directory to root directory of the application and install packages present in the requirements file: ```pip install -r requirements.txt```
+3. change directory to  ```wzb_logic``` and create a ```.env``` file. Set the following paramenters:
+       i. COHERE_API_KEY=_YOUR_COHERE_API_KEY_
+       ii. STAGE=DEV
+4. install mongodb if it isn't already present. The application automatically attempts to connection at ```mongodb://127.0.0.1:27017```.
+5. change back to root directory where the ```app.py``` is located and run : ```python app.py```
+
+#### NOTE: COHERE API FREE KEYS CAN BE GOTTEN [HERE](https://dashboard.cohere.ai/api-keys) 
