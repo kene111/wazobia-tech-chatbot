@@ -35,9 +35,9 @@ The chatbot application is served as an api endpoint using flask as the server s
 1. Create and activate a virtual environment.
 2. change directory to root directory of the application and install packages present in the requirements file: ```pip install -r requirements.txt```
 3. change directory to  ```wzb_logic``` and create a ```.env``` file. Set the following paramenters:
-   1. COHERE_API_KEY=__YOUR_COHERE_API_KEY__\
+   1. COHERE_API_KEY="__YOUR_COHERE_API_KEY__"
    2. STAGE=DEV
-   3. DATABASE_URL= __MONGODB_URI__ (optional, useful when deploying)
+   3. DATABASE_URL= "__MONGO_DB_URI__" (optional, useful when deploying)
 5. install mongodb if it isn't already present. The application automatically attempts to connection at ```mongodb://127.0.0.1:27017```.
 6. change back to root directory where the ```app.py``` is located and run : ```python app.py```
 
@@ -46,7 +46,7 @@ The post request data is of the type json. The request body is structured as fol
 ```
 {
     "user_query":{
-        "unique_id":"12345k6p0935",
+        "unique_id":"_UNIQUE_ID_",
         "query":"What does wazobia tech do?"
     }
 }
@@ -60,10 +60,6 @@ The expexted response is of the type json, and is structured as follows:
 
 #### NOTE: COHERE API FREE KEYS CAN BE GOTTEN [HERE](https://dashboard.cohere.ai/api-keys) 
 
-### ```URL```:```https://wazobia-tech-chatbot-kgpe.codecapsules.co.za/customer_service```
-### ```URL_STATUS```:```ACTIVE```
-
 ### Technical Notes:
-1. The language model used is a cohere language model, the free api allows for 5 requests per minute. An open source model is ideal for better control of the generated response, but most availble models
-   are too large and would require high grade computing resources.
+1. The language model used is a cohere language model, the free api allows for 5 requests per minute, and the overall latency isn't very adequate. An open source model with access to GPUS is ideal for better control of the generated response and improved latency.
 2. FAISS is used as the vector database, this decision was made due to the size of the curated information. For large data, pinecone vector database is ideal.
