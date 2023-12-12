@@ -47,7 +47,7 @@ The post request data is of the type json. The request body is structured as fol
 {
     "user_query":{
         "unique_id":"12345k6p0935",
-        "query":"What does wazobia tech about?"
+        "query":"What does wazobia tech do?"
     }
 }
 ```
@@ -59,3 +59,6 @@ The expexted response is of the type json, and is structured as follows:
 ```
 
 #### NOTE: COHERE API FREE KEYS CAN BE GOTTEN [HERE](https://dashboard.cohere.ai/api-keys) 
+
+### ```URL```:```https://wazobia-tech-chatbot-kgpe.codecapsules.co.za/customer_service```
+### ```URL_STATUS```:```ACTIVE```
