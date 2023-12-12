@@ -35,10 +35,11 @@ The chatbot application is served as an api endpoint using flask as the server s
 1. Create and activate a virtual environment.
 2. change directory to root directory of the application and install packages present in the requirements file: ```pip install -r requirements.txt```
 3. change directory to  ```wzb_logic``` and create a ```.env``` file. Set the following paramenters:
-       i. COHERE_API_KEY=_YOUR_COHERE_API_KEY_
-       ii. STAGE=DEV
-4. install mongodb if it isn't already present. The application automatically attempts to connection at ```mongodb://127.0.0.1:27017```.
-5. change back to root directory where the ```app.py``` is located and run : ```python app.py```
+   1. COHERE_API_KEY=__YOUR_COHERE_API_KEY__\
+   2. STAGE=DEV
+   3. DATABASE_URL= __MONGODB_URI__ (optional, useful when deploying)
+5. install mongodb if it isn't already present. The application automatically attempts to connection at ```mongodb://127.0.0.1:27017```.
+6. change back to root directory where the ```app.py``` is located and run : ```python app.py```
 
 ## API DATA STRUCTURE:
 The post request data is of the type json. The request body is structured as follows:
