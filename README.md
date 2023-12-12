@@ -62,3 +62,8 @@ The expexted response is of the type json, and is structured as follows:
 
 ### ```URL```:```https://wazobia-tech-chatbot-kgpe.codecapsules.co.za/customer_service```
 ### ```URL_STATUS```:```ACTIVE```
+
+### Technical Notes:
+1. The language model used is a cohere language model, the free api allows for 5 requests per minute. An open source model is ideal for better control of generated response but most availble models
+   are too large and would require high grade computing resources.
+2. FAISS is used as the vector database, this decision was made due to the size of the curated information. For large data, pinecone vectore database is ideal.
