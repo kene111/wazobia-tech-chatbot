@@ -1,8 +1,6 @@
 import os
 from .config.wzb_config import WZBConfig
 from langchain.prompts import PromptTemplate
-from langchain.chains import AnalyzeDocumentChain, LLMChain
-from langchain.chains.summarize import load_summarize_chain
 from langchain.memory import ConversationBufferMemory
 from langchain.memory import MongoDBChatMessageHistory
 from langchain.chains import ConversationalRetrievalChain
@@ -23,7 +21,7 @@ class WazobiaBot:
         Conversation structure template.
 
     chat_prompt_template: str
-        Full MMdel prompt.
+        Full Model prompt.
 
 
     user_request_info : dict
@@ -33,7 +31,7 @@ class WazobiaBot:
         LangChain LLMChain Object
       
     user_session_identifier : str
-       Unique identifier for a conversation between user and llm on a lecture transcription.
+       Unique identifier for a conversation between user and llm.
 
    
     wazobia_db_name : str
