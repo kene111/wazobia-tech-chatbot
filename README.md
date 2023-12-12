@@ -8,10 +8,10 @@ The Wazobia tech chatbot is a simple first responder automated chat service that
 2.  RAG - based Information retrival development.
 3.  Software development and deployment.
 
-### Information curation:
+### 1. Information curation:
 This process entailed gathering information a web user would be interested in regarding wazobia tech. The content of the data was collected from the companys [web](https://wazobia.tech/) page. Link to curated [data](https://docs.google.com/document/d/1HkT6knWZ0iBJz_eZp8dHf4sTrX0fYld8-NQ4RpdeH4k/edit?usp=sharing).
 
-### RAG - based Information retrival development:
+### 2. RAG - based Information retrival development:
 Large Language models are deep learning algorithms based on the transformer architecture trained on an extremely large corpus of properly pre-processed real word data curated within a specified time frame. Although
 the advantages of these models are endless, there are two draw backs; the first being that these models are too generalised they don't do so well on questions demanding specific knowledge. The other being that since
 the curated data is within a time frame, information requring knowledge outside the timeframe would be give incorrect responses.
@@ -19,7 +19,7 @@ the curated data is within a time frame, information requring knowledge outside 
 RAG which stands for Retrieval Augmented Generation, is one of the methods that is used to solve the issues explained above. This process accesses specific information stored in a location (ideally a vector database), and then uses the power of the 
 language model to generate the adequate response to the question or query asked. For this project  ```FAISS``` was used as the vector database, and huggingface ```sentence-transformers/all-MiniLM-L12-v2``` embedding model.
 
-### Software development and deployment:
+### 3. Software development and deployment:
 The chatbot application is served as an api endpoint using flask as the server side framework.
 
 ## Repository Breakdown:
