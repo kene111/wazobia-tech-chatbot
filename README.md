@@ -60,6 +60,10 @@ The expexted response is of the type json, and is structured as follows:
 
 #### NOTE: COHERE API FREE KEYS CAN BE GOTTEN [HERE](https://dashboard.cohere.ai/api-keys) 
 
+## Simplified Process Diagram:
+![Simple workflow](images/basic-workflow.png)
+
+
 ### Technical Notes:
 1. The language model used is a cohere language model, the free api allows for 5 requests per minute, and the overall latency isn't very adequate. An open source model with access to GPUS is ideal for better control of the generated response and improved latency.
 2. FAISS is used as the vector database, this decision was made due to the size of the curated information. For large data, pinecone vector database is ideal.
