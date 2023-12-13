@@ -17,7 +17,7 @@ the advantages of these models are endless, there are two draw backs; the first 
 the curated data is within a time frame, information requring knowledge outside the timeframe would be give incorrect responses.
 
 RAG which stands for Retrieval Augmented Generation, is one of the methods that is used to solve the issues explained above. This process accesses specific information stored in a location (ideally a vector database), and then uses the power of the 
-language model to generate the adequate response to the question or query asked. For this project  ```FAISS``` was used as the vector database, and huggingface ```sentence-transformers/all-MiniLM-L12-v2``` embedding model.
+language model to generate the adequate response to the question or query asked. For this project  ```FAISS``` was used as the vector database, and huggingface ```sentence-transformers/all-MiniLM-L12-v2``` embedding model. The curated data is vectorized and then serialzed, it can be found [here](https://github.com/kene111/wazobia-tech-chatbot/tree/main/wzb_logic/vector_db/wzb_faiss_index).
 
 ### 3. Software development and deployment:
 The chatbot application is served as an api endpoint using flask as the server side framework.
