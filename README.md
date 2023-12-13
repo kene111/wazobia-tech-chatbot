@@ -61,7 +61,7 @@ The expexted response is of the type json, and is structured as follows:
 #### NOTE: COHERE API FREE KEYS CAN BE GOTTEN [HERE](https://dashboard.cohere.ai/api-keys) 
 
 ## Simplified Process Diagram:
-![Simple workflow](images/basic-workflow.png)
+![Simple workflow](images/basic-workflow-final.png)
 
 
 ### Technical Notes:
