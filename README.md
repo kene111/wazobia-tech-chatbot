@@ -42,6 +42,9 @@ The chatbot application is served as an api endpoint using flask as the server s
 6. change back to root directory where the ```app.py``` is located and run : ```python app.py```
 
 ## API DATA STRUCTURE:
+This is localhost url endpoint:```http://127.0.0.0.1:5000/customer_service```.
+
+
 The post request data is of the type json. The request body is structured as follows:
 ```
 {
